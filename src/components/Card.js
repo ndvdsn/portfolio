@@ -29,12 +29,12 @@ const Card = ({project, index}) => {
                 <img src={project.mainImage.asset.url} alt={project.mainImage.alt} className="object-cover relative"/> 
             
             </div>
-            <div className={`absolute p-4 flex flex-col justify-between ${cols[index]} h-96 w-56 bottom-0`}>
+            <div className={`absolute p-4 flex flex-col justify-between ${cols[index]} h-96 w-36 sm:w-56 bottom-0`}>
                 <h4>{project.title}</h4>
                 
-                <div className="flex flex-wrap w-56 text-sm">
-                    {project.categories && project.categories.map((category)=> (
-                        <p className={`underline p-2 mr-2 rounded `}>{category.title}</p>
+                <div className="flex flex-wrap w-36 sm:w-56 text-sm">
+                    {project.categories && project.categories.map((category, index)=> (
+                        <p key={index} className={`underline p-2 mr-2 rounded `}>{category.title}</p>
                     ))}
                 </div>
             </div>
