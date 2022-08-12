@@ -49,7 +49,7 @@ const Project = () => {
             <div className="">
             <h2 className="text-xl p-4">{project.title}</h2>
             <p className="p-4 text-sm">Client: {project.client}</p>
-            <div className="flex flex-wrap p-4"><p>Technologies: <br></br>{project.categories && project.categories.map((category)=> (<b className="mr-2 text-sm">{category.title}</b>))}</p></div>
+            <div className="flex flex-wrap p-4"><p>Technologies: <br></br>{project.categories && project.categories.map((category, index)=> (<b key={index} className="mr-2 text-sm">{category.title}</b>))}</p></div>
             {project.href ? 
             <a href={project.href}><button className="bg-blue-400 rounded px-4 py-2 flex justify-around"><h4 className="pr-2">Demo / Deployment</h4> <FaExternalLinkAlt /></button></a> : null}
             </div>
