@@ -44,7 +44,7 @@ const Project = () => {
 
     if(!project) return <div>Loading...</div>
   return (
-    <main className=" min-h-screen p-12">
+    <main className=" min-h-screen sm:p-12">
         <header className="container mx-auto bg-white grid grid-cols-1 sm:grid-cols-2 p-12">
             <div className="">
             <h2 className="text-xl p-4">{project.title}</h2>
