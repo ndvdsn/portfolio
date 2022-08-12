@@ -30,7 +30,7 @@ const Card = ({project, index}) => {
             
             </div>
             <div className={`absolute p-4 flex flex-col justify-between ${cols[index]} h-96 w-36 sm:w-56 bottom-0`}>
-                <h4>{project.title}</h4>
+                <h4 className="text-xl">{project.title}</h4>
                 
                 <div className="flex flex-wrap w-36 sm:w-56 text-sm">
                     {project.categories && project.categories.map((category, index)=> (
