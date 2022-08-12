@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from 'react'
 import sanityClient from '../client'
-import { useParams, NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import BlockContent from "@sanity/block-content-to-react";
 import {FaExternalLinkAlt} from 'react-icons/fa'
 
@@ -40,7 +40,7 @@ const Project = () => {
         }`)
         .then((data)=> setProject(data[0]))
         .catch(console.error)
-    },[])
+    },[slug])
 
     if(!project) return <div>Loading...</div>
   return (
