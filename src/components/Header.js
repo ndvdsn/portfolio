@@ -12,9 +12,9 @@ const Header = () => {
             <NavLink to="/projects" className="inline-flex items-center py-3 px-3 mr-4">
                 Projects
             </NavLink>
-            <NavLink to="/about" className="inline-flex items-center py-3 px-3 mr-4">
+            {/* <NavLink to="/about" className="inline-flex items-center py-3 px-3 mr-4">
                 About
-            </NavLink>
+            </NavLink> */}
           
         </nav>
     </div>

@@ -11,11 +11,13 @@ const About = () => {
           </div>
           <div className="flex flex-wrap bg-yellow-400 p-8">
           
-           <p className="mr-4 pb-4 py-12 flex flex-wrap">The projects included here showcase some of my recent development work. Some clients are private freelance contracts, others are collaborations through Moray College / University of the Highlands and Islands department of computing where I work as a researcher.</p>
+           <p className="mr-4 pb-4 py-12 flex flex-wrap">
+            The projects included here showcase some of my recent development work. 
+            Some clients are private freelance contracts, others are collaborations through 
+            Moray College / University of the Highlands and Islands department of computing 
+            where I work as a researcher.
+          </p>
          
-           {/* <NavLink to="/projects">
-           <FaArrowRight style={{height: "4rem", width: "4rem", background: "#60A5FA", borderRadius: "5px", padding: "6px", color: "black"}}/>
-           </NavLink> */}
           </div>
             
         </section>
